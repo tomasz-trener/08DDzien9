@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01ORMWstep", "P01ORMWstep\P01ORMWstep.csproj", "{9C7FF779-D9BB-480C-B420-A5208F7AFED1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02LaczenieDanych", "P02LaczenieDanych\P02LaczenieDanych.csproj", "{08297405-3A48-458B-A967-AB4830C610D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03OperacjeCRUD", "P03OperacjeCRUD\P03OperacjeCRUD.csproj", "{896F291D-84C5-4554-AA85-ACF1926F4D7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9C7FF779-D9BB-480C-B420-A5208F7AFED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C7FF779-D9BB-480C-B420-A5208F7AFED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C7FF779-D9BB-480C-B420-A5208F7AFED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08297405-3A48-458B-A967-AB4830C610D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08297405-3A48-458B-A967-AB4830C610D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08297405-3A48-458B-A967-AB4830C610D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08297405-3A48-458B-A967-AB4830C610D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896F291D-84C5-4554-AA85-ACF1926F4D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896F291D-84C5-4554-AA85-ACF1926F4D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896F291D-84C5-4554-AA85-ACF1926F4D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896F291D-84C5-4554-AA85-ACF1926F4D7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

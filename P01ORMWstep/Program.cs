@@ -125,7 +125,7 @@ namespace P01ORMWstep
             // LINQtoSQL - mechanizm mapowania ORM 
 
             // 1) wypisz dla każdego kraju imie i nazwisko najwyższego zawodnika z tego kraju 
-            // 2) wypisz grupy zawodników , urodzonych w tym samym miesiącu 
+          
 
             //db.Zawodnik
             //    .GroupBy(x => x.kraj)
@@ -191,6 +191,27 @@ namespace P01ORMWstep
             //{
             //    Console.WriteLine(z.imie + " " + z.nazwisko + " " + z.waga / Math.Pow((double)z.wzrost / 100.0, 2));
             //}
+
+
+            // 2) wypisz grupy zawodników , urodzonych w tym samym miesiącu 
+
+            var grupy =
+                db.Zawodnik
+                    .GroupBy(x => x.data_ur.Value.Month)
+                    .Select(x => new { NumerMiesica = x.Key, Zawodnicy = x.Select(y => y) }).ToArray();
+
+
+            foreach (var g in grupy)
+                Console.WriteLine(g.NumerMiesica + " " + string.Join("*", g.Zawodnicy.Select(x=>x.nazwisko)));
+
+
+            // nie polecam takiej składni 
+            //Zawodnik[] zawodnicy2 =
+            //    (from x in db.Zawodnik
+            //     where x.kraj == "pol"
+            //     select x).ToArray();
+
+
 
             Console.ReadKey();
         }

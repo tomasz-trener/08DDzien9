@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="tomasz1_zawodnicy" Class="ModelBazyDanychDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=mssql4.webio.pl,2401;Initial Catalog=tomasz1_zawodnicy;User ID=tomasz1_alxalx" SettingsObjectName="P03OperacjeCRUD.Properties.Settings" SettingsPropertyName="tomasz1_zawodnicyConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.zawodnicy" Member="Zawodnik">
+    <Type Name="Zawodnik">
+      <Column Name="id_zawodnika" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_trenera" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="imie" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="nazwisko" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="kraj" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="data_ur" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="wzrost" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="waga" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

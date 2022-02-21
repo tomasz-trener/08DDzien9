@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ModelBazyDanych">
+  <DataContextMoniker Name="/ModelBazyDanychDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bde6b301-f573-4971-aaf4-56dfc38d8e45" absoluteBounds="1.875, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ModelBazyDanychDataContext/Trener" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3214be31-38b2-4b93-8568-f1a7cfc28c20" absoluteBounds="1.8900000000000001, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a13c122d-5178-4438-9ee9-43b0bc704a3e" absoluteBounds="5.625, 1.25, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/ModelBazyDanychDataContext/Zawodnik" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d57be6f2-550f-42bf-8309-98832aa8d696" absoluteBounds="5.6400000000000006, 1.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.875 : 2.16429768880208); (5.625 : 2.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelBazyDanychDataContext/Trener/trenerzy_zawodnicy" />
+      <nodes>
+        <classShapeMoniker Id="bde6b301-f573-4971-aaf4-56dfc38d8e45" />
+        <classShapeMoniker Id="a13c122d-5178-4438-9ee9-43b0bc704a3e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
